@@ -1,0 +1,13 @@
+{
+  "version": "0.5.9",
+  "versionCode": 43,
+  "size": 5922598,
+  "md5": "cbf2112ce1e824c5c87ba0070c66d918",
+  "notes": [
+    "检查更新改走 GitHub 固定地址（别人任何网络都能在软件内检查/下载）",
+    "优先公网更新地址，失败再退回本机 8792（开发用）",
+    "与 Switch 版同步的修复：更新链路、封面 CA 兜底逻辑"
+  ],
+  "url": "https://zys123444444-dotcom.github.io/hongguo.apk",
+  "published": "2026-10-22 17:13:54"
+}
