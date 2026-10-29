@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "versionCode": 200,
+  "size": 27792904,
+  "md5": "b0667c447fb23be7ee9e62b76419e406",
+  "notes": [
+    "红果冻 NRO 2.0.0：下载引擎(断点续传/本地播放/删除)、站内搜索修复(建议端点+本地索引合并)、设置页重做(解码四项真开关+诊断)、开源声明B站二维码、最近观看写入、预打开下一集、倍速按剧记忆"
+  ],
+  "url": "https://zys123444444-dotcom.github.io/hongguo-borealis-M211a.nro",
+  "mirrors": [
+    "https://cdn.jsdelivr.net/gh/zys123444444-dotcom/zys123444444-dotcom.github.io@main/hongguo-borealis-M211a.nro",
+    "https://raw.githubusercontent.com/zys123444444-dotcom/zys123444444-dotcom.github.io/main/hongguo-borealis-M211a.nro",
+    "https://ghproxy.net/https://raw.githubusercontent.com/zys123444444-dotcom/zys123444444-dotcom.github.io/main/hongguo-borealis-M211a.nro"
+  ],
+  "notice": {
+    "lines": [
+      "欢迎使用红果冻 NRO 2.0.0",
+      "发现问题可在 B 站主页留言"
+    ]
+  },
+  "published": "2026-10-30 07:00:00"
+}
