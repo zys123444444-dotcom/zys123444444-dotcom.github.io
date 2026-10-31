@@ -1,8 +1,8 @@
 {
-  "version": "2.0.2",
-  "versionCode": 202,
+  "version": "2.0.5",
+  "versionCode": 205,
   "size": 27966129,
-  "md5": "2ca7fd96efdc3a1e375e3e97901b7370",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.2/hongguodong2.0.2.nro",
-  "notes": "修详情页“转圈 30 秒加载不出来”（锁顺序反转）；元数据与列表合并为一次下载；首页分类页签点剧集没反应；设置页按 B 黑屏；起播去掉 1.2 秒白等"
+  "md5": "233b6d6d656dd46cc1b4995debdd9821",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.5/hongguodong2.0.5.nro",
+  "notes": "首页封面明显变快（CDN 走 http，首张 2748→360ms）；详情页标题秒显；详情页尾延迟修复（预取不兜底 CMS + 站点熔断，6.2s→2~3s）；换集旧流让路"
 }
