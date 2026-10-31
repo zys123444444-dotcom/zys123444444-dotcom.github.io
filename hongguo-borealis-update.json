@@ -3,6 +3,6 @@
   "versionCode": 200,
   "size": 27962033,
   "md5": "84abe3b4ac3f32d551030192f9d80559",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.0/hongguo-borealis-v2.0.0.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.0/hongguodong-borealis-v2.0.0.nro",
   "notes": "2.0.0 正式版：修复 2x 掉帧、首帧降到 1~1.5s、网络单一执行层、播放页触摸与焦点修复"
 }
