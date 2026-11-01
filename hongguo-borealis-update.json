@@ -1,24 +1,24 @@
 {
-  "version": "2.0.73",
-  "versionCode": 273,
-  "size": 28035761,
-  "md5": "e6b32209e235ae64f49328b6c1530e75",
+  "version": "2.0.76",
+  "versionCode": 276,
+  "size": 28039857,
+  "md5": "011eed29a6c9d41fe2d1bad9c8323b23",
   "notes": [
+    "修「详情页触屏滑动选集列表闪退」：修复 borealis 焦点/触摸生命周期三处缺陷",
     "播放接近秒开：匿名取流超时 6s→1s，失败后 10 分钟内直接走签名接口",
     "分类页签（真人剧/漫剧/AI剧）可连续下滑加载；每页单飞、看门狗带尝试号",
-    "网络双锁合一，不再出现等锁上百秒；成功追加复位重试计数",
-    "退出采用「黑屏一下即自动退出」（已知：本机 libnx 退出收尾会卡）",
-    "日志/缓存/开关/更新包统一归档到 sdmc:/switch/hongguodong/"
+    "网络双锁合一，不再出现等锁上百秒",
+    "退出采用「黑屏一下即自动退出」（已知：本机 libnx 退出收尾会卡）"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.73/hongguodong2.0.73.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.73/hongguodong2.0.73.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.73/hongguodong2.0.73.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro"
   ],
   "notice": {
     "lines": [
-      "红果冻 NRO 2.0.73：播放秒开、分类页可连续加载"
+      "红果冻 NRO 2.0.76：修复详情页触屏闪退，播放秒开"
     ]
   },
-  "published": "2026-11-02 03:05:00"
+  "published": "2026-11-02 05:15:00"
 }
