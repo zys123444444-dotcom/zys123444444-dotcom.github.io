@@ -1,8 +1,24 @@
 {
-  "version": "2.0.5",
-  "versionCode": 205,
-  "size": 27966129,
-  "md5": "233b6d6d656dd46cc1b4995debdd9821",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.5/hongguodong2.0.5.nro",
-  "notes": "首页封面明显变快（CDN 走 http，首张 2748→360ms）；详情页标题秒显；详情页尾延迟修复（预取不兜底 CMS + 站点熔断，6.2s→2~3s）；换集旧流让路"
+  "version": "2.0.43",
+  "versionCode": 243,
+  "size": 28035761,
+  "md5": "5fe69fd504d15174bacd5c12bccbd7b2",
+  "notes": [
+    "分类页签（真人剧/漫剧/AI剧）重做：每页签独立列表与独立分页状态，可连续下滑加载",
+    "修「同一页取两次 / 右上角误报超时」：每页单飞 + 看门狗带尝试号",
+    "修长期死锁：网络锁合并为一把，日志不再出现「等 curl 锁 …持锁者未登记」",
+    "预取在封面待取时让路；分页超时最多自动重试 2 次",
+    "文件归档：日志/缓存/开关/更新包全部收进 sdmc:/switch/hongguodong/"
+  ],
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.43/hongguodong2.0.43.nro",
+  "mirrors": [
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.43/hongguodong2.0.43.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.43/hongguodong2.0.43.nro"
+  ],
+  "notice": {
+    "lines": [
+      "红果冻 NRO 2.0.43：分类页可连续加载，网络层去掉一处长期死锁"
+    ]
+  },
+  "published": "2026-11-01 21:20:00"
 }
