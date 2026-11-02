@@ -1,24 +1,24 @@
 {
-  "version": "2.0.76",
-  "versionCode": 276,
-  "size": 28039857,
-  "md5": "011eed29a6c9d41fe2d1bad9c8323b23",
+  "version": "2.2.6",
+  "versionCode": 226,
+  "size": 28054437,
+  "md5": "7b721b20ae591c13e34ddcacca2afaf3",
   "notes": [
-    "修「详情页触屏滑动选集列表闪退」：修复 borealis 焦点/触摸生命周期三处缺陷",
-    "播放接近秒开：匿名取流超时 6s→1s，失败后 10 分钟内直接走签名接口",
-    "分类页签（真人剧/漫剧/AI剧）可连续下滑加载；每页单飞、看门狗带尝试号",
-    "网络双锁合一，不再出现等锁上百秒",
-    "退出采用「黑屏一下即自动退出」（已知：本机 libnx 退出收尾会卡）"
+    "取流迁移官方新端点 video_tab（免签名，need_all_video_definition=1）",
+    "处理 base64 main_url / fallback_api 追档 / bytevc2 不可播",
+    "播放接近秒开；下载清晰度（自动/1080p/720p）可用",
+    "修复底栏触摸、详情页进出与按B退出崩溃、命令缓冲容量",
+    "新增布局自检与取流体检闸门"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.0.76/hongguodong2.0.76.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro"
   ],
   "notice": {
     "lines": [
-      "红果冻 NRO 2.0.76：修复详情页触屏闪退，播放秒开"
+      "红果冻 NRO 2.2.6：取流恢复、播放秒开、下载可用"
     ]
   },
-  "published": "2026-11-02 05:15:00"
+  "published": "2026-11-03 00:35:00"
 }
