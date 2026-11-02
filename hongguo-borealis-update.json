@@ -1,24 +1,24 @@
 {
-  "version": "2.2.6",
-  "versionCode": 226,
+  "version": "2.2.10",
+  "versionCode": 2210,
   "size": 28054437,
-  "md5": "7b721b20ae591c13e34ddcacca2afaf3",
+  "md5": "114df8674db940fdd78db411be244080",
   "notes": [
-    "取流迁移官方新端点 video_tab（免签名，need_all_video_definition=1）",
-    "处理 base64 main_url / fallback_api 追档 / bytevc2 不可播",
+    "取流走官方新端点 video_tab（need_all_video_definition=1；base64/fallback_api/bytevc2 三坑已处理）",
     "播放接近秒开；下载清晰度（自动/1080p/720p）可用",
-    "修复底栏触摸、详情页进出与按B退出崩溃、命令缓冲容量",
-    "新增布局自检与取流体检闸门"
+    "修复：进下载页后切回发现/追剧/最近出现空白页与巨大焦点框",
+    "最近观看封面三级补全（追剧 → 发现页 → 官网详情）",
+    "修复：底栏触摸、详情页进出与按 B 退出崩溃、命令缓冲容量"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.6/hongguodong2.2.6.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro"
   ],
   "notice": {
     "lines": [
-      "红果冻 NRO 2.2.6：取流恢复、播放秒开、下载可用"
+      "红果冻 NRO 2.2.10：取流恢复、封面补全、播放稳定"
     ]
   },
-  "published": "2026-11-03 00:35:00"
+  "published": "2026-11-03 01:55:00"
 }
