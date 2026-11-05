@@ -20,5 +20,13 @@
       "红果冻 NRO 2.2.10：取流恢复、封面补全、播放稳定"
     ]
   },
-  "published": "2026-11-03 01:55:00"
+  "published": "2026-11-03 01:55:00",
+  "strategy": {
+    "version": 1,
+    "vt_sign_v2": 1,
+    "vt_unsigned": 1,
+    "rotate": 1,
+    "rotate_cooldown_sec": 60,
+    "prefer_v2": 0
+  }
 }
