@@ -1,19 +1,18 @@
 {
-  "version": "2.2.10",
-  "versionCode": 2210,
-  "size": 28054437,
-  "md5": "114df8674db940fdd78db411be244080",
+  "version": "2.3.9",
+  "versionCode": 2309,
+  "size": 28132261,
+  "md5": "578a1d1d3708554e3cbd3a5226449322",
   "notes": [
-    "取流走官方新端点 video_tab（need_all_video_definition=1；base64/fallback_api/bytevc2 三坑已处理）",
-    "播放接近秒开；下载清晰度（自动/1080p/720p）可用",
-    "修复：进下载页后切回发现/追剧/最近出现空白页与巨大焦点框",
-    "最近观看封面三级补全（追剧 → 发现页 → 官网详情）",
-    "修复：底栏触摸、详情页进出与按 B 退出崩溃、命令缓冲容量"
+    "新增弹幕：播放页「弹幕」胶囊 / ＋键打开；开关·速度·透明度·字号·显示区域五项设置",
+    "弹幕轨道照 wiliwili 防重叠（排不下就丢弃）；倍速模型照 wiliwili（2x 下视频时间不变）",
+    "修复：服务端要求 video_tab 签名后旧版取流失败（补签名 + 失败阶梯 + 身份轮换）",
+    "新增自适应取流策略：正常播放零新增请求，取流失败才拉远端 strategy 段",
+    "修复：横屏弹幕按钮位置、竖屏同档字号偏大、面板开着按 A 被播放圆钮抢走"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.3.9/hongguodong2.3.9.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.2.10/hongguodong2.2.10.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.3.9/hongguodong2.3.9.nro"
   ],
   "notice": {
     "lines": [
