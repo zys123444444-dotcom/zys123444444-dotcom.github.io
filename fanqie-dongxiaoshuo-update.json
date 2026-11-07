@@ -1,9 +1,9 @@
 {
-  "version": "2.3.9",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.3.9/AAA-fq.nro",
+  "version": "2.4.0",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.4.0/AAA-fq.nro",
   "notes": [
-    "原版顶栏五项：推荐/小说/短剧/漫剧/漫画",
-    "短剧/漫剧列表接入",
+    "原版 UI：顶栏/五项页签/今日焦点/为你精选/继续阅读/发现更多好故事/底栏四项",
+    "短剧/漫剧播放（复用红果冻播放页与取流）",
     "品牌统一为番茄冻小说",
     "公告/更新 JSON 独立于红果冻项目"
   ]
