@@ -1,27 +1,27 @@
 {
-  "version": "2.4.78",
-  "versionCode": 24078,
+  "version": "2.4.81",
+  "versionCode": 24081,
   "size": 28004925,
-  "md5": "b038b615059e3fd38fc59bc61e565b8d",
+  "md5": "ff4e20b0227cce4d702471747c3b9454",
   "notes": [
-    "修复：全屏播放页点按钮「点好几次才生效」——手指带 6px 以上漂移就被滑动手势吞掉（现在起手落在按钮上不参与换集手势）",
-    "修复：设置入口——顶栏齿轮按 A 实际弹出公告（公告条不再抢焦点）",
-    "改进：设置「清除封面缓存」改成递归删除，提示条数=实际删除数",
-    "改进：/switch 根目录收口——日志/缓存/数据全部在 hongguodong/ 下，历史遗留自动归档到 archive/",
-    "修复：首页连环分页（预取自激链：停手后不再自己一页页翻）",
-    "修复：首页同剧跨板块重复封面去重 + 底栏计数口径"
+    "修复：检查更新读错清单（一直读番茄冻的 JSON，显示\"最新版 2.4.0\"）",
+    "修复：顶栏分类页签不能用十字键选（页签间显式左右移动；网格↑进页签，再↑进搜索框/齿轮）",
+    "修复：详情页按 Y 只能加入追剧、再按不会取消（改为切换）",
+    "修复：更新判据改为\"远端严格大于本地\"，不再把旧版本显示成\"有更新\"",
+    "修复：设置入口 A 弹公告（公告条不再抢焦点）；清除封面缓存改递归删除",
+    "修复：播放页点按钮\"点好几次才生效\"（手抖 6px 被滑动手势吞掉）；首页连环分页"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.81/hongguodong2.4.81.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.81/hongguodong2.4.81.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.81/hongguodong2.4.81.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.2.10：取流恢复、封面补全、播放稳定"
     ]
   },
-  "published": "2026-11-11 12:46:56",
+  "published": "2026-11-11 13:41:29",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
