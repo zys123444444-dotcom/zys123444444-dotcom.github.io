@@ -1,26 +1,27 @@
 {
-  "version": "2.3.9",
-  "versionCode": 2309,
-  "size": 28132261,
-  "md5": "578a1d1d3708554e3cbd3a5226449322",
+  "version": "2.4.78",
+  "versionCode": 24078,
+  "size": 28004925,
+  "md5": "b038b615059e3fd38fc59bc61e565b8d",
   "notes": [
-    "新增弹幕：播放页「弹幕」胶囊 / ＋键打开；开关·速度·透明度·字号·显示区域五项设置",
-    "弹幕轨道照 wiliwili 防重叠（排不下就丢弃）；倍速模型照 wiliwili（2x 下视频时间不变）",
-    "修复：服务端要求 video_tab 签名后旧版取流失败（补签名 + 失败阶梯 + 身份轮换）",
-    "新增自适应取流策略：正常播放零新增请求，取流失败才拉远端 strategy 段",
-    "修复：横屏弹幕按钮位置、竖屏同档字号偏大、面板开着按 A 被播放圆钮抢走"
+    "修复：全屏播放页点按钮「点好几次才生效」——手指带 6px 以上漂移就被滑动手势吞掉（现在起手落在按钮上不参与换集手势）",
+    "修复：设置入口——顶栏齿轮按 A 实际弹出公告（公告条不再抢焦点）",
+    "改进：设置「清除封面缓存」改成递归删除，提示条数=实际删除数",
+    "改进：/switch 根目录收口——日志/缓存/数据全部在 hongguodong/ 下，历史遗留自动归档到 archive/",
+    "修复：首页连环分页（预取自激链：停手后不再自己一页页翻）",
+    "修复：首页同剧跨板块重复封面去重 + 底栏计数口径"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.3.9/hongguodong2.3.9.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.3.9/hongguodong2.3.9.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.3.9/hongguodong2.3.9.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.78/hongguodong2.4.78.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.2.10：取流恢复、封面补全、播放稳定"
     ]
   },
-  "published": "2026-11-03 01:55:00",
+  "published": "2026-11-11 12:46:56",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
