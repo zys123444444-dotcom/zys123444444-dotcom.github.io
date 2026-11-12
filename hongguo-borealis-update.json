@@ -1,28 +1,32 @@
 {
-  "version": "2.4.91",
-  "versionCode": 24091,
-  "size": 28004925,
-  "md5": "8af19c5c6e7320bd6b36f0b5836cfe32",
+  "version": "2.4.117",
+  "versionCode": 24117,
+  "size": 28009021,
+  "md5": "d9b2af5fd7c4f5add7a310fab8f772fb",
   "notes": [
-    "修复：分类页（真人剧/漫剧/AI剧）前几张是黑方块 —— 去重函数把条目 move 空（无重复列表整表清空）",
-    "修复：顶栏页签按一次方向键跳两格（同一方向键派发 raw+NAV 两个事件，两套逻辑各走一格）",
-    "修复：网格里按 ↑ 从第 2 行直接跳顶栏（改用格子下标判第一行）",
-    "修复：下载页删除确认框 —— 红底压字改红描边；链式确认框丢失焦点/输入穿透；删除作用在错误行",
-    "修复：状态栏「已加载 N 部」与右下「共 N 部」口径不一致（统一取屏幕实际张数）",
-    "修复：分类页刷不出来（短剧模式误用番茄 short 接口，交回 seedCatItems + 分类分页）",
-    "修复：最右页签按 → 能把光标交给搜索框；分页追加不再整体重建网格（封面不闪）"
+    "修复：分类页（真人剧/漫剧/AI剧）切过去只有几部、怎么滚都不再加载 —— 分页\"加载中\"标志在结果被判过期时没复位，而且它被跨页签保存",
+    "修复：分类页切走再切回来一直\"加载中\"，按 Y 重试也没反应 —— Y 现在会整套复位分页状态并在重建后自动续翻",
+    "修复：翻到\"到底\"后永久不再加载 —— 现在滚到底过 15 秒会自动再探一页",
+    "修复：按 Y 复位后从旧页码续取，导致中间页断档",
+    "修复：切分类要等十来秒才出新剧 —— 后台预取改为在分页在途时立刻让路（实测 10.6 秒 → 1.6 秒）",
+    "修复：分页追加出现整排\"空壳卡\"（接口后几页返回空标题/空封面行）",
+    "优化：封面加载可见区优先 + 三车道并发（9 分钟长跑取图 4.3×，可见行 p95 4.6s → 2.4s，队列峰值 205 → 36）",
+    "修复：详情页按方向键\"像失灵\"（焦点落在隐形视图）；主按钮与选集格焦点描边现在清晰可见",
+    "修复：详情页右上「下载 / 刷新 / 追剧」方向键走不到；「立即播放」↓ 下不到选集",
+    "外观：检查更新页按钮红底红字改深色胶囊（焦点能看清）",
+    "清理：删掉排查期的 7 处诊断日志，日志不再膨胀"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.91/hongguodong2.4.91.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.91/hongguodong2.4.91.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.91/hongguodong2.4.91.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-11 17:36:13",
+  "published": "2026-11-12T03:54:10+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
