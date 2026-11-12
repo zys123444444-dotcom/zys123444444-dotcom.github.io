@@ -7,9 +7,11 @@
     "测试版：内容与 2.4.119 完全一致，仅用于验证「检查更新 → 下载并校验 → 自动重启 → 新包自安装」这条链路",
     "启动日志会打一行「v2.4.120 测试版：自动更新链路验证」，用于确认重启后跑的确实是新包"
   ],
-  "url": "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
   "mirrors": [
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
     "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
     "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro"
   ],
   "notice": {
