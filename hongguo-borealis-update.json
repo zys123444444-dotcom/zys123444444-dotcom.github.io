@@ -21,7 +21,7 @@
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T13:08:36+08:00",
+  "published": "2026-11-12T13:10:31+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -29,5 +29,14 @@
     "rotate": 1,
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
-  }
+  },
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro.gz",
+  "gz_md5": "1bb06173f67eba9f7be13d9e50d7ee39",
+  "gz_size": 13380617,
+  "gz_mirrors": [
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro.gz"
+  ]
 }
