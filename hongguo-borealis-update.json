@@ -1,32 +1,27 @@
 {
-  "version": "2.4.117",
-  "versionCode": 24117,
+  "version": "2.4.119",
+  "versionCode": 24119,
   "size": 28009021,
-  "md5": "d9b2af5fd7c4f5add7a310fab8f772fb",
+  "md5": "d736ad85ee5c2aab2fcdebafa92abaf6",
   "notes": [
-    "修复：分类页（真人剧/漫剧/AI剧）切过去只有几部、怎么滚都不再加载 —— 分页\"加载中\"标志在结果被判过期时没复位，而且它被跨页签保存",
-    "修复：分类页切走再切回来一直\"加载中\"，按 Y 重试也没反应 —— Y 现在会整套复位分页状态并在重建后自动续翻",
-    "修复：翻到\"到底\"后永久不再加载 —— 现在滚到底过 15 秒会自动再探一页",
-    "修复：按 Y 复位后从旧页码续取，导致中间页断档",
-    "修复：切分类要等十来秒才出新剧 —— 后台预取改为在分页在途时立刻让路（实测 10.6 秒 → 1.6 秒）",
-    "修复：分页追加出现整排\"空壳卡\"（接口后几页返回空标题/空封面行）",
-    "优化：封面加载可见区优先 + 三车道并发（9 分钟长跑取图 4.3×，可见行 p95 4.6s → 2.4s，队列峰值 205 → 36）",
-    "修复：详情页按方向键\"像失灵\"（焦点落在隐形视图）；主按钮与选集格焦点描边现在清晰可见",
-    "修复：详情页右上「下载 / 刷新 / 追剧」方向键走不到；「立即播放」↓ 下不到选集",
-    "外观：检查更新页按钮红底红字改深色胶囊（焦点能看清）",
-    "清理：删掉排查期的 7 处诊断日志，日志不再膨胀"
+    "修复：分类页点单集条目直接进播放，取流卡住时只能干等 → 单集条目改为先进详情页（可看简介、换集、重试）",
+    "修复：连续开两部时可能叠出两个播放页（双解码/双缓冲，把 3.2GB 堆打满）→ 播放页单例保护",
+    "修复：取流失败自动重试用尽后没有任何\"更新版本\"入口 → 补上提示入口",
+    "新增：检查更新「下载并校验」一次点击完成 —— 下载 → md5 校验 → 自动重启进新版本 → 新包启动时自动落到正式槽位（旧版由系统关闭，无需手动替换）",
+    "新增：播放页「取流失败？点此更新版本」同样一次点击完成（原来要点两次）",
+    "优化：更新包选择按修改时间最新（避免 update 目录里残留的旧版本包被误装），安装后自动清空该目录"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.117/hongguodong2.4.117.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T03:54:10+08:00",
+  "published": "2026-11-12T06:48:57+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
