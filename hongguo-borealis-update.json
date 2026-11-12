@@ -1,12 +1,10 @@
 {
-  "version": "2.4.126",
-  "versionCode": 24126,
+  "version": "2.4.127",
+  "versionCode": 24127,
   "size": 28226165,
   "md5": "5c5eb2ff3e4305d2ab5b43e3a5eb7b41",
   "notes": [
-    "修复：更新下载完成后系统不自动重启 —— next-load 必须走正常退出（原来 _exit(0) 跳过了加载器的返回函数）",
-    "优化：优先用 envSetNextLoad 让系统自动启动新包；环境不支持时退回随包更新器",
-    "说明：同时包含 2.4.125 的更新器、2.4.123 的 gz 压缩包与断点续传"
+    "测试版：内容与 2.4.126 完全相同，仅用于验证「下载→校验→自动重启→自安装」"
   ],
   "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro",
   "mirrors": [
