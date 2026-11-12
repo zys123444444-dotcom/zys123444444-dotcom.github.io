@@ -1,24 +1,27 @@
 {
   "version": "2.4.123",
   "versionCode": 24123,
-  "size": 28009021,
-  "md5": "1829e0492a4d3fbbd0569b07021dcf87",
+  "size": 28013117,
+  "md5": "e3eda6eb2b694d3a84f77955904f2075",
   "notes": [
-    "测试版：内容与 2.4.122 完全相同，仅用于验证「下载→校验→自动重启→自安装」链路"
+    "修复：更新下载\"下完又重新下载\" —— 下载残片原来不带内容标识，换版本后会把上一版残片续传进来导致 md5 必坏；现在残片按目标 md5 前 8 位命名",
+    "新增：gzip 压缩包更新（26.7MB → 12.8MB，下载时间约砍半），校验 md5 后 zlib 解压，失败自动回退整包",
+    "优化：下载主线路换成实测最快的镜像（gh-proxy.com，130~210KB/s），并保留 3 条兜底线路",
+    "优化：下载卡住时 20 秒低于 8KB/s 就判失败并断点续传（最多 3 次），不再干等 30 分钟"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.123/hongguodong2.4.123.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T07:31:26+08:00",
+  "published": "2026-11-12T13:08:36+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
