@@ -1,27 +1,23 @@
 {
-  "version": "2.4.119",
-  "versionCode": 24119,
+  "version": "2.4.120",
+  "versionCode": 24120,
   "size": 28009021,
-  "md5": "d736ad85ee5c2aab2fcdebafa92abaf6",
+  "md5": "4b60e1cfa17d1b5fa891ba7da41131f4",
   "notes": [
-    "修复：分类页点单集条目直接进播放，取流卡住时只能干等 → 单集条目改为先进详情页（可看简介、换集、重试）",
-    "修复：连续开两部时可能叠出两个播放页（双解码/双缓冲，把 3.2GB 堆打满）→ 播放页单例保护",
-    "修复：取流失败自动重试用尽后没有任何\"更新版本\"入口 → 补上提示入口",
-    "新增：检查更新「下载并校验」一次点击完成 —— 下载 → md5 校验 → 自动重启进新版本 → 新包启动时自动落到正式槽位（旧版由系统关闭，无需手动替换）",
-    "新增：播放页「取流失败？点此更新版本」同样一次点击完成（原来要点两次）",
-    "优化：更新包选择按修改时间最新（避免 update 目录里残留的旧版本包被误装），安装后自动清空该目录"
+    "测试版：内容与 2.4.119 完全一致，仅用于验证「检查更新 → 下载并校验 → 自动重启 → 新包自安装」这条链路",
+    "启动日志会打一行「v2.4.120 测试版：自动更新链路验证」，用于确认重启后跑的确实是新包"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.119/hongguodong2.4.119.nro"
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.120/hongguodong2.4.120.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T06:48:57+08:00",
+  "published": "2026-11-12T06:57:59+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
