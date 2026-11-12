@@ -1,24 +1,29 @@
 {
-  "version": "2.4.131",
-  "versionCode": 24131,
-  "size": 28230261,
-  "md5": "56a900c9e5939e81a8d08d1cff67ac33",
+  "version": "2.4.136",
+  "versionCode": 24136,
+  "size": 28295797,
+  "md5": "d74224617c5d2f71ee0c04b61fdddeea",
   "notes": [
-    "版本号更新：全自动更新链路验证版（内容同 2.4.130）"
+    "全自动更新链路真机验证通过（2.4.130 → 2.4.131，romfsExit 解锁 + appletRequestLaunchApplication 重启）",
+    "下载线路可观测：每次更新在日志留下\"线路体检 + 实测 KB/s\"，死线路快速跳过",
+    "修复三处更新器缺陷：探针串行（唯一 curl 句柄不能并发）、吞吐日志取真值、非首选线路不再白等 27 秒",
+    "新增增量更新（HGDP1 补丁）通道：相邻小改版本补丁仅 620KB（新包 2.2%），真机正负两例均通过",
+    "补丁带收益护栏：补丁 ≥ 全量 60% 时自动走全量，失败也自动回退",
+    "本版不含补丁资产（2.4.131 → 2.4.136 改动过大，补丁 10.2MB / 全量 75.9%，护栏拦下）"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T15:47:32+08:00",
+  "published": "2026-11-12T18:15:36+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -27,13 +32,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro.gz",
-  "gz_md5": "79becc1260c14053bd7ad454054be51b",
-  "gz_size": 13473113,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro.gz",
+  "gz_md5": "3c9f500d6be496b0651b1c5d5b3c1e1a",
+  "gz_size": 13480706,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.131/hongguodong2.4.131.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.136/hongguodong2.4.136.nro.gz"
   ]
 }
