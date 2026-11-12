@@ -1,24 +1,28 @@
 {
-  "version": "2.4.127",
-  "versionCode": 24127,
-  "size": 28226165,
-  "md5": "5c5eb2ff3e4305d2ab5b43e3a5eb7b41",
+  "version": "2.4.130",
+  "versionCode": 24130,
+  "size": 28230261,
+  "md5": "edb1ae927e53759d1424dbd83e9a03f3",
   "notes": [
-    "测试版：内容与 2.4.126 完全相同，仅用于验证「下载→校验→自动重启→自安装」"
+    "新增：全自动更新 —— 下载校验后自动覆盖旧版并自动重启进新版本（romfsExit 释放锁 + appletRequestLaunchApplication 请求系统重启）",
+    "新增：更新包 gzip 压缩（26.7MB → 13.5MB），下载时间约减半",
+    "修复：下载残片跨版本续传导致 md5 必坏、反复重下",
+    "修复：下载卡住不再干等（20 秒低速判失败 + 断点续传 + 换线路）",
+    "修复：按 B 退出偶发崩溃（封面线程仍在 curl 时不再拆 libcurl）"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-12T14:37:26+08:00",
+  "published": "2026-11-12T15:36:35+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -27,13 +31,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro.gz",
-  "gz_md5": "da24ee96d2b42eeaf6f858852d510a5d",
-  "gz_size": 13470188,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro.gz",
+  "gz_md5": "ff90eb5bc851eceadd2d8a487309dc13",
+  "gz_size": 13473036,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.126/hongguodong2.4.126.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.130/hongguodong2.4.130.nro.gz"
   ]
 }
