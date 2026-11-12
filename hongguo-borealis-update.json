@@ -1,18 +1,17 @@
 {
-  "version": "2.4.122",
-  "versionCode": 24122,
+  "version": "2.4.123",
+  "versionCode": 24123,
   "size": 28009021,
   "md5": "1829e0492a4d3fbbd0569b07021dcf87",
   "notes": [
-    "修复：按 B 退出时偶发崩溃（封面线程还在 curl 里就拆了 libcurl → Data Abort @0）—— 现在先等封面线程空闲最多 1.5 秒，仍在传输就跳过清理直接退出",
-    "修复：检查更新下载卡在某个百分比不动 —— 增加低速中止（20 秒低于 8KB/s 判失败）、断点续传（最多 3 次）、4xx 自动换线路",
-    "优化：更新清单主线路换成实测更快的镜像（gh-proxy.com，130~210KB/s），并保留 3 条备用线路",
-    "说明：本版同时包含 2.4.120（单集条目不跳过列表页、播放页单例、一次点击完成更新）"
+    "测试版：内容与 2.4.122 完全相同，仅用于验证「下载→校验→自动重启→自安装」链路"
   ],
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
   "mirrors": [
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.122/hongguodong2.4.122.nro"
   ],
   "notice": {
     "lines": [
