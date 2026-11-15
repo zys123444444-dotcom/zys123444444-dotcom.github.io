@@ -1,28 +1,29 @@
 {
-  "version": "2.4.149",
-  "versionCode": 24149,
-  "size": 28299893,
-  "md5": "6dd259efc8e30dec968795e3a9e0eef7",
+  "version": "2.4.186",
+  "versionCode": 24186,
+  "size": 28303989,
+  "md5": "c5456abe788015906b43eec4b845b4d4",
   "notes": [
-    "新增「定时播放」：全屏播放页底部「定时」胶囊，点一下循环 关→15→30→60→90 分钟，胶囊上显示倒计时，到点自动关闭软件",
-    "定时按钮横屏/竖屏都有，且随 UI 一起隐藏；竖屏位置在「弹幕」上方",
-    "默认开启硬件解码（NVDEC）：修复硬解开关在播放器初始化之后才赋值、从未生效的问题",
-    "效果：2.0 倍速 + 1080P 从\"每秒丢约 17 帧\"降到**实测 0 丢帧**，音画偏差稳定在 0.06~0.10 秒",
-    "1.0/1.25/1.5 倍速行为不变（音画偏差 0.001~0.005 秒）"
+    "详情页进页：缓存命中 0.475s → **0.041s**；冷启动后第一次进详情 **5.9s → 0.041s**",
+    "焦点预取修源：红果卡不再打番茄接口（2.4.178 是 17 次 [fq] / 0 次 [hg]，现在是 0 / 9）",
+    "详情缓存查询挪到网络锁之前：首页抓取进行中进详情不再白等 1.79s",
+    "详情缓存 / 本地索引：写被中断后不再\"粘连\"出假 id（`7777…` 这类永久失配的缓存）",
+    "详情缓存重写时丢掉过期行：文件 290KB → 66KB，重写 359ms → 104ms",
+    "网络打点：`拉取` 日志新增 wire / TLS / TTFB / total（便于判断是体积还是 RTT）"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-15T03:48:09+08:00",
+  "published": "2026-11-15T23:41:47+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -31,18 +32,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro.gz",
-  "gz_md5": "ae7801a0bd99fdbe1841866bf7f9fdc1",
-  "gz_size": 13501197,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro.gz",
+  "gz_md5": "18a798b380cad214eb6ca26cbc3b546e",
+  "gz_size": 13509676,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.nro.gz"
-  ],
-  "patch_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.149/hongguodong2.4.149.from-2.4.146.hgp",
-  "patch_md5": "1285cc2cc2c5b70e1f6c7a5b7168734c",
-  "patch_size": 8046554,
-  "patch_from": "2.4.146",
-  "patch_from_md5": "b352e18e911611d8515aaa43cb748395"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.186/hongguodong2.4.186.nro.gz"
+  ]
 }
