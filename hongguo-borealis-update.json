@@ -1,28 +1,28 @@
 {
-  "version": "2.4.203",
-  "versionCode": 24203,
-  "size": 28312181,
-  "md5": "11236f1c01e7064cfe5b9c94e366dd3b",
+  "version": "2.4.209",
+  "versionCode": 24209,
+  "size": 28377717,
+  "md5": "684483f157a15e7c2644921f409da7f4",
   "notes": [
-    "工程侧收尾版：**运行行为与 2.4.202 一致**（未改任何参与构建的源码）",
-    "GPL 旧实现归档：`ref-only/gpl-legacy-20261117.tar.gz`（7 个文件，包内 README 写明依据与回滚法）",
-    "交付物：`backup-取流策略-20261117/`（44 文件 + SHA256SUMS）+ 番茄冻交接文档",
-    "静态：全部模块冻结向量通过；port-gates 全绿（G26b~G26g）",
-    "真机：详情 5/5 成功、起播 `[v5] model 命中` 出画面"
+    "v5 取流：域名顺序按实测重排（api5-normal 第一）+ 单台超时 6s→2s + 记住可用 host + 死 host 降权 10 分钟（冷取流 6851ms→911ms，真机同场景）",
+    "探针新增 series_id= 入口：只给剧 id 也能先解析详情页 vid_list 再取第 ep 集，结果行回显 via=v5|multi|fallback",
+    "封面集数角标不再写死像素（百分比宽 + 右对齐 + 自动 ellipsis）：修掉「全113集」漏出封面外的显示问题",
+    "[v5] 日志新增 ms= 与「host 顺序：首个=…（记住=…，降权=…）」，取流慢时可直接看单台耗时与选择依据",
+    "本版只动域名策略 / 探针口径 / 角标排版，签名实现与播放路径未改"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-17T08:10:41+08:00",
+  "published": "2026-11-17T13:47:50+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -31,13 +31,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro.gz",
-  "gz_md5": "4dca6efc74615a5cce76f27d9c62940b",
-  "gz_size": 13524599,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro.gz",
+  "gz_md5": "ff3292c5e89a1e0468a1d46e08d427fa",
+  "gz_size": 13538280,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.203/hongguodong2.4.203.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.209/hongguodong2.4.209.nro.gz"
   ]
 }
