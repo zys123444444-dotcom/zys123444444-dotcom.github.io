@@ -1,10 +1,15 @@
 {
-  "version": "2.4.0",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.4.0/AAA-fq.nro",
-  "notes": [
-    "原版 UI：顶栏/五项页签/今日焦点/为你精选/继续阅读/发现更多好故事/底栏四项",
-    "短剧/漫剧播放（复用红果冻播放页与取流）",
-    "品牌统一为番茄冻小说",
-    "公告/更新 JSON 独立于红果冻项目"
-  ]
+ "version": "2.9.162",
+ "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.9.162/AAA-fq.nro",
+ "notes": [
+  "原版 UI 全面重建：顶栏/页签/今日焦点/为你精选/继续阅读/发现更多好故事/底栏四项",
+  "短剧/漫剧/AI剧页签（红果分类页数据）+ 播放页复用（弹幕/选集/倍速/定时/跳过片头尾）",
+  "听书：目录面板、九段式页、音色选择、离线下载与管理页、断点续播",
+  "2 倍速音画同步：起播与切倍速统一走 display-tempo（av p50 +2.09s → +0.97s）",
+  "取流协议换独立实现（player/v1 + gzip），签名栈不再依赖 GPL 派生代码",
+  "设备侧每日自检（走生产取流路径）+ 首帧打点 logs/hg-perf.txt",
+  "修复：我的页左上角焦点环残影（borealis frameHighlight 画在已销毁焦点上）"
+ ],
+ "md5": "f64dc01260d797af59b4a1ffb6d3bb7b",
+ "size": 28284436
 }
