@@ -1,28 +1,26 @@
 {
-  "version": "2.4.215",
-  "versionCode": 24215,
+  "version": "2.4.217",
+  "versionCode": 24217,
   "size": 28381813,
-  "md5": "3458ebb8bc6905d4c65caeaf9aa92c4a",
+  "md5": "98fe52adf242e6614ec4031e17f3cfce",
   "notes": [
-    "崩溃修复：播放页「取流回调在页面析构后才回主线程」→ 回调带存活令牌 + 退出守卫（真机播放中直接关 App 不再崩，Atmosphere 无新增崩溃报告）",
-    "漫剧点卡异常：series 解析失败时退回剧集详情（不再用空 series 开播放页、不会卡在上一部）",
-    "目录治理：生成物全部收进 /switch/hongguodong，/switch 根只留 AAA-hgd.nro*；下载目录与 fqport 数据层一并迁入",
-    "迁移兼容：旧开关文件仍从 /switch 根兜底读取；fq 数据是**复制**不是搬移（番茄冻不受影响）",
-    "只改路径与两处守卫，取流/播放/弹幕/UI 逻辑未动"
+    "修复：首页点卡片打开的是**另一部剧**（封面与内容对不上）——网格去重后点击下标错位，已按显示顺序快照映射",
+    "同一处也修了焦点预取：不再预取错的剧",
+    "不影响：数据、封面加载、分页、布局与播放链路均未改动"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-17T22:39:02+08:00",
+  "published": "2026-11-18T08:50:02+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -31,18 +29,18 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro.gz",
-  "gz_md5": "edc48833ae751a70ac1d84a70b07a54c",
-  "gz_size": 13544295,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro.gz",
+  "gz_md5": "78e4dda94cecc18f1480538fbe4957d1",
+  "gz_size": 13544935,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.nro.gz"
   ],
-  "patch_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.215/hongguodong2.4.215.from-2.4.211.hgp",
-  "patch_md5": "bff5cf84eb569fc7bd2554e4743644cb",
-  "patch_size": 7924758,
-  "patch_from": "2.4.211",
-  "patch_from_md5": "40fbbce2bd05013d5b8690bf86d2f666"
+  "patch_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.217/hongguodong2.4.217.from-2.4.215.hgp",
+  "patch_md5": "0dc25ae0a48825a32f5c991acab7ce89",
+  "patch_size": 8084827,
+  "patch_from": "2.4.215",
+  "patch_from_md5": "3458ebb8bc6905d4c65caeaf9aa92c4a"
 }
