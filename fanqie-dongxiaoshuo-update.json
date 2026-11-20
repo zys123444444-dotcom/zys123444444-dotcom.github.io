@@ -1,16 +1,16 @@
 {
-  "version": "2.9.309",
-  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.9.309/AAA-fq.nro",
+  "version": "2.9.311",
+  "url": "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/fanqie-dongxiaoshuo-v2.9.311/AAA-fq.nro",
   "notes": [
-    "**换剧恢复正常**：上游响应改成「一张卡=一部剧」，旧解析把每张卡里 `video_list` 的每一集都当一条，",
-    "按 ↓ 变成同一部剧换集。现在按卡取 `series_title`/`series_cover`/`video_list[0].vid`",
-    "（`series_id_str` 优先，避免数字精度截断），换剧一次一部新剧。",
-    "**一直往下滑有新剧**：第二段 `bookmall/cell/change` 打通 —— 补 `cell_id_str` + `session_id` +",
-    "`change_type`(首屏 2/翻页 1) + `next_offset` 游标。实测条数随下滑持续增长（12 → 21 …）。",
-    "已在最后一部且正在补页时原地提示「正在加载更多…」，不再绕回第 1 部。",
-    "**简介行照原版**：大标题=剧名，下一行 `第1集丨<简介>`，默认 2 行、点一下展开 6 行",
-    "（修掉三个语义坑：lineHeight 是倍数、Label 默认不换行且不按高度裁剪、截断按字节）。"
+    "**修「本地新版被提示有更新、还能降级」**：判据从 `远端 != 本地` 改成**远端严格大于本地**",
+    "（比较抽成 `hg::upd_version_newer()`，设置页与播放页共用同一处判据）。",
+    "**更新清单名统一**：播放页更新入口、远端取流策略两处仍写死红果冻清单",
+    "（`hongguo-borealis-update.json`）→ 统一为番茄冻自己的 `fanqie-dongxiaoshuo-update.json`。",
+    "新增构建闸门 `tools/gate-release-target.sh`：App 宏 / 发版脚本 / hgcore 字面量三处清单名不一致就拒绝构建。",
+    "换剧恢复正常（一张卡=一部剧）；**一直下滑持续加载新剧**；简介行两行、点一下展开 6 行。",
+    "闪退修复：取流 worker 在页面关闭后写成员导致的堆破坏（公开源兜底慢窗口触发）。",
+    "10 页用例 10/10（首页六页签 / 详情 / 阅读器+目录 / 漫画 / 听书 / 短剧播放 / B 连按 / 连切 3 集 / HOME 守卫 / 检查更新）。"
   ],
-  "md5": "5ad0ce2b7dd0109a985379f2aba0b3ce",
+  "md5": "48f15d697e41cedf8e863e9140ae728c",
   "size": 28448276
 }
