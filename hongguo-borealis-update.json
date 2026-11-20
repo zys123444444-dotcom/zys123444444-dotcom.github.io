@@ -1,29 +1,30 @@
 {
-  "version": "2.4.222",
-  "versionCode": 24222,
-  "size": 28381813,
-  "md5": "cbc3673d1328e1dad539e4187e790d4e",
+  "version": "2.9.309",
+  "versionCode": 29309,
+  "size": 28448276,
+  "md5": "5ad0ce2b7dd0109a985379f2aba0b3ce",
   "notes": [
-    "**部分中间集/末集又能放了**：当 v5 / 批量接口都空包时，如果剩余预算还够（>2.5 秒），",
-    "101000（该剧被服务端按内容拒绝）仍然**立刻失败**并报 HGE-1201（实测 2.4 秒级，不再白扫视频页接口）。",
-    "取流体检面板会多一行「最近真实播放：X 小时前（24h 内 N 次成功）」——判红时能一眼分清\"真坏了\"和\"没人用/数据过期\"。",
-    "体检不再因为\"样本只有 2 次里败 1 次\"就判红（样本 <5 按观察处理）。",
-    "服务端按内容拒绝的剧（1201）本机修不了，只能明确报出来。",
-    "重登只做一次（不是无限轮换身份），救不回的空包会落成 1108/1103 并进事件流。"
+    "**换剧恢复正常**：上游响应改成「一张卡=一部剧」，旧解析把每张卡里 `video_list` 的每一集都当一条，",
+    "**一直往下滑有新剧**：第二段 `bookmall/cell/change` 打通 —— 补 `cell_id_str` + `session_id` +",
+    "**简介行照原版**：大标题=剧名，下一行 `第1集丨<简介>`，默认 2 行、点一下展开 6 行",
+    "**闪退修复**：`prefetchNext()` 的取流 worker 是 feed 页唯一没有 alive 令牌的，",
+    "6s 慢提示「网络较慢，正在重试…」在首帧后会自动恢复成简介行。",
+    "10 个页面用例全部通过（首页六页签 / 详情 / 阅读器+目录 / 漫画 / 听书 / 短剧播放 /",
+    "播放质量：`[VO] probe` vo-drop=1；播放段卡顿 1 条（起播段）；`MPV ERROR` 0。"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-19T13:56:17+08:00",
+  "published": "2026-11-20T13:26:01+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -32,18 +33,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro.gz",
-  "gz_md5": "b1db0666c62f39e6dd990f26917df791",
-  "gz_size": 13546820,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro.gz",
+  "gz_md5": "09214969d48d1c07ca7c7c7bb5bbd80a",
+  "gz_size": 13575850,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.nro.gz"
-  ],
-  "patch_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.222/hongguodong2.4.222.from-2.4.221.hgp",
-  "patch_md5": "978e87c863c8164fec46243eaf02715c",
-  "patch_size": 8018174,
-  "patch_from": "2.4.221",
-  "patch_from_md5": "64bd676355ac841583f4c2856e99e473"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.9.309/hongguodong2.9.309.nro.gz"
+  ]
 }
