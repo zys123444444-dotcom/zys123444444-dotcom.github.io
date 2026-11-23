@@ -1,43 +1,43 @@
 {
- "version": "2.4.232",
- "versionCode": 24232,
- "size": 28385909,
- "md5": "5486369274eb335e215564d8b5381bee",
- "notes": [
-  "新增：取流「组合矩阵」——端点 × 签名族 × 体形态共 12 个组合，按历史命中/耗时排序在预算内依次试，命中即置顶 5 分钟，连续 2 次 200/0 降到队尾 10 分钟。",
-  "平台翻转时不再需要\"改一版代码试一条路\"：主路全空后会自动补试未试过的组合（默认最多 3 个，墙钟 2.5s 上限）。",
-  "修复：v5 组合此前用固定签名票据，约 8/12 个组合「几毫秒就失败」= 请求根本没发出去；现已与主路一致按偏移搜索。",
-  "播放快路不变：video_tab v5 命中仍是 0.6~1.1s，画面/弹幕/自动下一集未受影响。",
-  "新增取证侧门 flags/hg-combo-sweep.txt（只用于扫矩阵取证，默认不影响线上顺序）。"
- ],
- "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro",
- "mirrors": [
-  "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro",
-  "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro",
-  "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro",
-  "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro"
- ],
- "notice": {
-  "lines": [
-   "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
+  "version": "2.4.234",
+  "versionCode": 24234,
+  "size": 28385909,
+  "md5": "73b6654d0f8b62f64dd6394489d9fd23",
+  "notes": [
+    "新增：取流「定时探针」——启动后 120s 首探、之后每 10 分钟用最小请求探 1 个组合（只判返回字节数，不解析），命中即置顶 10 分钟；探针失败不降级主路径。",
+    "新增：远端「策略表」——`update.json` 的 `strategy` 段可以下发组合优先级 `combos` 与版本 profile `version_code`，平台翻转时改 JSON 即可让全网换路，不用发版。",
+    "修复：远端把 `combos/version_code` 删掉时本地缓存旧值不覆盖（改回默认不生效）。",
+    "稳定性：探针不再新开线程（本平台新线程碰网络会崩），改为挂在取流线程出口；连续播放 3 分钟以上无崩溃。",
+    "取流快路不变：video_tab v5 命中仍是 0.6~1.1s，播放/弹幕/自动下一集未受影响。"
+  ],
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro",
+  "mirrors": [
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro"
+  ],
+  "notice": {
+    "lines": [
+      "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
+    ]
+  },
+  "published": "2026-11-23T12:09:10+08:00",
+  "strategy": {
+    "version": 1,
+    "vt_sign_v2": 1,
+    "vt_unsigned": 1,
+    "rotate": 1,
+    "rotate_cooldown_sec": 60,
+    "prefer_v2": 0
+  },
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro.gz",
+  "gz_md5": "6ba350de2837e4d61fd69cd3e31a37da",
+  "gz_size": 13559510,
+  "gz_mirrors": [
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.234/hongguodong2.4.234.nro.gz"
   ]
- },
- "published": "2026-11-23T10:11:21+08:00",
- "strategy": {
-  "version": 1,
-  "vt_sign_v2": 1,
-  "vt_unsigned": 1,
-  "rotate": 1,
-  "rotate_cooldown_sec": 60,
-  "prefer_v2": 0
- },
- "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz",
- "gz_md5": "5c0df8f239c1ed75e147d48c9ec0640c",
- "gz_size": 13556761,
- "gz_mirrors": [
-  "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz",
-  "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz",
-  "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz",
-  "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz"
- ]
 }
