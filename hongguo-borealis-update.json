@@ -29,7 +29,8 @@
   "vt_unsigned": 1,
   "rotate": 1,
   "rotate_cooldown_sec": 60,
-  "prefer_v2": 0
+  "prefer_v2": 0,
+  "version_code": 73932
  },
  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.232/hongguodong2.4.232.nro.gz",
  "gz_md5": "5c0df8f239c1ed75e147d48c9ec0640c",
