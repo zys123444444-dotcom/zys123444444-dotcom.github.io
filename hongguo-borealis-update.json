@@ -1,27 +1,29 @@
 {
-  "version": "2.4.275",
-  "versionCode": 24275,
+  "version": "2.4.276",
+  "versionCode": 24276,
   "size": 28459637,
-  "md5": "5d9eaaa6afc0daff466daed4e2b371a5",
+  "md5": "530a2945746d39137c399f35c356969c",
   "notes": [
-    "**追剧 / 最近观看列表改为倒序**：最近加入或最近看过的排在最前（按记录里的时间戳排序，",
-    "**匿名门画像可本地覆盖**：`sdmc:/switch/hongguodong/v5-profile.txt`（`wire21` / `version_code` /",
-    "宿主回归 16/0；移植闸门全绿；阀门 21/0；",
-    "真机：写覆盖文件 → 取流 200 且日志出现覆盖行；删文件 → 恢复；两轮无崩溃。"
+    "追剧 / 最近观看列表按时间戳倒序（最近加入/最近看的在最前）。",
+    "匿名门画像覆盖（`sdmc:/switch/hongguodong/v5-profile.txt`）：",
+    "覆盖的 `hosts` 放在内置 host **之前、不替换**（覆盖 host 挂了自动回落）；",
+    "覆盖生效时 **User-Agent 跟随画像**（版本号/机型/系统版本），避免画像与 UA 自相矛盾。",
+    "宿主回归 16/0；移植闸门全绿（含 G38）；阀门 21/0；",
+    "真机：覆盖生效（`ev=profile override=1` + 取流 200）→ 删文件回滚，两轮均命中。"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-24T17:54:03+08:00",
+  "published": "2026-11-24T18:05:54+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -30,13 +32,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro.gz",
-  "gz_md5": "6cc3841e494977acaa3f1f95745f384c",
-  "gz_size": 13589752,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro.gz",
+  "gz_md5": "d613a7d02524f11a9a9b2339d8b99b1c",
+  "gz_size": 13589750,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.275/hongguodong2.4.275.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.276/hongguodong2.4.276.nro.gz"
   ]
 }
