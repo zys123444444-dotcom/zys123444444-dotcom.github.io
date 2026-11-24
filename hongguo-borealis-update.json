@@ -1,32 +1,32 @@
 {
-  "version": "2.4.268",
-  "versionCode": 24268,
+  "version": "2.4.273",
+  "versionCode": 24273,
   "size": 28455541,
-  "md5": "5052452ceafa382103b310c9fd9c82b1",
+  "md5": "9ff874fdbfa74f2e42d1bbb218e14ff9",
   "notes": [
-    "匿名门命中 4 次：HTTP 200 / 27,099~27,449 字节 / 184~576ms；",
-    "取流完成事件 5 次 ok=1（947~1655ms）；",
-    "播放首帧 **763ms**（阈值 2500ms），退出 3944ms，play-smoke PASS。",
-    "匿名门默认开；放 `sdmc:/switch/hongguodong/flags/hg-v5-anon-off.txt` 可关闭（回到 2.4.266 行为）；",
-    "2.4.266 的取流策略下发（field21 / channel / combo_disable / 身份阈值）保留，默认值未变。",
-    "`fqcore/fq_v5sig.c`：新增 `fq_v5_medusa_anon` / `fq_v5_anon_query`（按 wire 字段事实独立实现）；",
-    "`hgcore/hg_v5_fetch.cpp`：新增 `hg_v5_fetch_model_anon`（host 顺序：b → api5-normal → a）；",
-    "`hgcore/hg_fetch.cpp`：取流链在 v5 主路失败后、组合矩阵之前接入匿名门；",
-    "版本 2.4.268。"
+    "弹幕崩溃（真机 Data Abort / strlen）：把弹幕响应解析抽成纯函数并逐层判空；",
+    "次生问题：关闭软件的确认框曾被「磁贴凭证」闸门拦下导致退出卡住，已改为显式 bypass（审计留痕）。",
+    "观看页返回剧集详情页时，光标**落回正在播放的那一集**（进程内记录优先，观看记录兜底），",
+    "取流：匿名门提到最前（真机 200 / 27KB / 208~528ms），每集不再先白付约 2.7 秒的 player_v1 超时。",
+    "G30：静态扫描「可空指针直接进格式化」；",
+    "G31：弹幕解析的宿主「空字段」回归（16 条断言，含阴性对照）；",
+    "产物自证：每个 NRO 旁生成 manifest（sha256/md5/版本/魔数），部署前强制校验。",
+    "宿主回归 16 passed / 0 failed；移植闸门全绿；阀门 18/0；",
+    "真机 5 轮压力（播放→切集→返回）：弹幕 17 个窗口全部 code=0（含 90 条 / 65KB 大窗），"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-24T10:46:09+08:00",
+  "published": "2026-11-24T13:16:03+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -35,13 +35,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro.gz",
-  "gz_md5": "eab44edd63044381a836d04807b23663",
-  "gz_size": 13584755,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro.gz",
+  "gz_md5": "6466741655a93832fd60127b51daeef0",
+  "gz_size": 13583935,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.268/hongguodong2.4.268.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.273/hongguodong2.4.273.nro.gz"
   ]
 }
