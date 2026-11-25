@@ -1,27 +1,26 @@
 {
-  "version": "2.4.280",
-  "versionCode": 24280,
+  "version": "2.4.281",
+  "versionCode": 24281,
   "size": 28459637,
-  "md5": "7efeb0854022bd4ac88c2143fab78ba6",
+  "md5": "3e0a75d2585bab5cb0bd09c8978d2719",
   "notes": [
-    "现场：`Data Abort @0`，PC=`_socketGetFd`，栈为",
-    "改法（两条，都不打断在途传输 —— 2.4.52 实测\"中途 abort\"会让退出黑屏）：",
-    "打点：`[exit] 网络排干：{}ms prefetch={} net_busy={}`、`[net] 退出中 → 拒绝新传输`。",
-    "同版带上 2.4.279 的修法（CDN TTFB 探针 + 退出前 `hg_curl_idle_wait`）与 2.4.277 的退出路径（不提前放锁 + 3s 兜底）。"
+    "`flags/hg-tap.txt` 写 `x y`（1280x720 像素）→ App 连续三帧注入\"按下/按下/抬起\"，",
+    "不写文件时行为与 2.4.280 完全一致（`g_dbgTouchEnabled` 默认 false）。",
+    "用途：触摸手势相关问题（卡片 `TapGestureRecognizer` 生命周期等）可以脚本化复现、可回归。"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-25T09:53:18+08:00",
+  "published": "2026-11-25T22:17:22+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -30,18 +29,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro.gz",
-  "gz_md5": "e435757df5039befd5247b2df78a41b0",
-  "gz_size": 13590657,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro.gz",
+  "gz_md5": "91d145ecedb4fa4e4536bbacd7f4eee9",
+  "gz_size": 13590641,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.nro.gz"
-  ],
-  "patch_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.280/hongguodong2.4.280.from-2.4.276.hgp",
-  "patch_md5": "1a71e1bfcd9fb225fbdd3d3d8bba74ed",
-  "patch_size": 7583539,
-  "patch_from": "2.4.276",
-  "patch_from_md5": "530a2945746d39137c399f35c356969c"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.281/hongguodong2.4.281.nro.gz"
+  ]
 }
