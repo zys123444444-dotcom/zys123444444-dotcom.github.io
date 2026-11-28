@@ -1,28 +1,30 @@
 {
-  "version": "2.4.287",
-  "versionCode": 24287,
-  "size": 28459637,
-  "md5": "be8b4586d36b2bd80a794d364d0946e9",
+  "version": "2.4.290",
+  "versionCode": 24290,
+  "size": 28463733,
+  "md5": "f898f4fd7701db07ebe9c517a983023e",
   "notes": [
-    "首帧：dec 预打开挪到 4MB 首缓之前 —— 详情页就绪即可就绪；回详情就按 A 的起播，open 段 669~845ms → 109~197ms",
-    "首帧中位（不等预打开，settle=0）：2.4.286 的 1657ms → 2.4.287 的 1073ms（×0.65，p=0.041）",
-    "封面：cover_begin/end 改 RAII，修 covers 计数一路变负（实测 -14→-101）导致的网络优先级表失真",
-    "诊断：网络优先级拦截原因（blocked_reason/stats）与前台待办计数（fg）落日志，便于下轮定位",
-    "兼容：不改播放/取流/UI 行为；CR-020（shutdown 时的 Data Abort）修复沿用"
+    "通路探测记忆：预取的 32KB Range GET 成功后也记下\"这台主机能通\"，起播不再白打一次 HEAD（冷 host 实测 62ms vs 362ms）",
+    "探测记忆 TTL 600s → 3600s；记忆读写收口到 hgcore，播放页/预取共用同一份",
+    "通路探测（HEAD）从主线程搬到取流线程：无预热起播时不再卡 UI（正常路径已被预取抢先，属保险丝）",
+    "弹幕自动切集：换集瞬间不再被旧集位置顶走加载点（\"有时候整集没弹幕、手动开关又好了\"的根因）",
+    "弹幕：卡住 15s 的请求现在真的会被回收；连续失败 6 窗的放弃从 1 小时改为 60s；8 秒无首窗落一行诊断",
+    "修正 `ev=headcache done=1` 假绿（实际 0 字节也写 done=1），改为按真实结果写 done=1/fail=1",
+    "兼容：不改播放/取流/UI 行为；首帧 A/B（vs 2.4.287）no-regression"
   ],
-  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro",
+  "url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro",
   "mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro"
   ],
   "notice": {
     "lines": [
       "红果冻 NRO 2.4.91：分类页黑方块/页签十字键/下载确认框/计数口径 已修"
     ]
   },
-  "published": "2026-11-28T00:15:55+08:00",
+  "published": "2026-11-28T10:45:18+08:00",
   "strategy": {
     "version": 1,
     "vt_sign_v2": 1,
@@ -31,13 +33,13 @@
     "rotate_cooldown_sec": 60,
     "prefer_v2": 0
   },
-  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro.gz",
-  "gz_md5": "0a9b1537bfeeb68d9f0f2ed780bcb77d",
-  "gz_size": 13602636,
+  "gz_url": "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro.gz",
+  "gz_md5": "4d62152d0e2818097466fa8248975264",
+  "gz_size": 13600160,
   "gz_mirrors": [
-    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro.gz",
-    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro.gz",
-    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro.gz",
-    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.287/hongguodong2.4.287.nro.gz"
+    "https://gh-proxy.com/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro.gz",
+    "https://ghproxy.net/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro.gz",
+    "https://ghfast.top/https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro.gz",
+    "https://github.com/zys123444444-dotcom/zys123444444-dotcom.github.io/releases/download/v2.4.290/hongguodong2.4.290.nro.gz"
   ]
 }
